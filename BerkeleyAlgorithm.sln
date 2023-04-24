@@ -6,7 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "src\Client\Client
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "src\Server\Server.csproj", "{51DA6C8A-9E41-4759-BF45-4C1DEE8E8F9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{BBDD9D73-6AD9-4EFA-8E98-499F0E74369C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "src\Common\Common.csproj", "{BBDD9D73-6AD9-4EFA-8E98-499F0E74369C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulador", "src\Simulador\Simulador.csproj", "{2E21B798-EED3-4756-A3A5-BEBA21A0E431}"
 EndProject
