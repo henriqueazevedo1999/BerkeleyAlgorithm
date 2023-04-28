@@ -26,7 +26,8 @@ public class ServerSideBerkeley : BerkeleyBase
             listenSocket = new(IPAddress.Any, PORTA);
             listenSocket.Start();
 
-            while (true)
+            PeriodicTimer timer = new(TimeSpan.FromMilliseconds(1));
+            while (await timer.WaitForNextTickAsync())
             {
                 // aguarda ate um cliente pedir por uma conexao
                 Socket socket = await listenSocket.AcceptSocketAsync();
@@ -43,8 +44,6 @@ public class ServerSideBerkeley : BerkeleyBase
                         break;
                     }
                 });
-
-                Thread.Sleep(1);
             }
         }
         finally

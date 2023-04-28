@@ -10,17 +10,8 @@ public enum TipoMensagem
     Ajuste,
 }
 
-public record Mensagem
+public record Mensagem(long Ticks, TipoMensagem Tipo)
 {
-    public Mensagem(long ticks, TipoMensagem tipo)
-    {
-        Ticks = ticks;
-        Tipo = tipo;
-    }
-
-    public long Ticks { get; set; }
-    public TipoMensagem Tipo { get; set; }
-
     public override string ToString()
     {
         JsonSerializerOptions options = new();
